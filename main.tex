@@ -75,6 +75,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingSmall}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-10pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -126,7 +133,7 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Northeastern University}{Expected Graduation -- Dec 2026}
+      {Northeastern University}{Expected Graduation -- December 2026}
       {Bachelor of Science in Computer Science}{Boston, MA}
     \resumeItemListStart
         \resumeItem{GPA: 3.89/4.0, Major GPA: 4.0/4.0, Dean's List (every semester)}
@@ -159,9 +166,10 @@
   %   \resumeItemListEnd
 % -------------------------------------------
 
-    \resumeSubheading
-      {Organizer, Mentor \& Full Stack Developer}{December 2023 -- Present}
-      {PawHacks}{Oakland, CA} 
+    % \resumeSubheading
+    %   {Organizer, Mentor \& Full Stack Developer}{December 2023 -- Present}
+    %   {PawHacks}{Oakland, CA} 
+    \resumeSubheadingSmall{PawHacks}{December 2023 -- Present}
 
       \resumeSubSubheading
       {Mentor/Technical Recruiter}{May 2024 - Present}
@@ -186,13 +194,14 @@
     % \resumeItemListEnd
 
     \resumeSubheading
-      {Undergraduate Teaching Assistant}{January 2024 -- April 2024}
-      {Northeastern University - Khoury College of Computer Sciences}{Oakland, CA}
+      {Northeastern University - Khoury College of Computer Sciences}{January 2024 -- April 2024}
+      {Undergraduate Teaching Assistant}{Oakland, CA}
       \resumeItemListStart
         \resumeItem{Conducted 20 hours of in-person office hours and tutoring sessions per week for CS 2510 (Fundamentals of CS 2)}
         \resumeItem{Instructed over 35 people concurrently during peak times in Java and data structures}
         \resumeItem{Held on-demand 1-on-1 appointments for debugging help, LeetCode practice, and exam review}
       \resumeItemListEnd
+
 
     % --------------------------------- copy
 
