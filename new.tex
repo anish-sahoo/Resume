@@ -171,6 +171,18 @@
 % <------------------------------------------------ this is the original from before priceline
 
 
+
+% Update unified consumption schema and priceapi to add currency support DS-41701
+% Update protobuf pom for nexus (not a ticket but a small fix)
+% Add no args constructor to custapi and add a java17 release DS-42447
+% Hotel price watch alerts DS-42622 - kafka setup and database update
+% Hotel price watch part 2 DS-42932 - new relic logging, messaging team, check if user booked hotel
+% Vector api POC with google - to use google’s knowledge graph and other vertex ai tools to create recommendations
+% Customer preferences poc - create a heuristics based system (later ml) to compute what preferences a customer has
+% Find what values are causing a bug in custactivityapi using Lightrun - ended 
+%   up being a bug will getOfferToken. Also found out that if you run java hotspot without a flag, it will show the 
+%   stack trace for NPE only once and then empty stack traces after
+
 \section{Technical Skills}
 % \begin{itemize}[leftmargin=0.15in, label={}]
 %    \small{\item{
@@ -222,18 +234,21 @@
   {Backend Software Engineer Co-op}{January 2025 -- June 2025}
   {Priceline (Enterprise Data Products \& Services Team)}{New York, NY}
   \resumeItemListStart
-    \resumeItem{Developed and optimized high-throughput REST and gRPC services with Java Spring, improving backend performance and database efficiency}
-    \resumeItem{Architected and implemented a Kafka-based hotel price watch alert system designed to scale for millions of customers, enabling real-time price tracking and notifications}
-    \resumeItem{Created and deployed a customer preference inference system using heuristics to predict user interests, with plans for ML expansion}
-    \resumeItem{Engineered a proof-of-concept integrating Google's Knowledge Graph and Vertex AI tools to generate personalized hotel recommendations}
+    % \resumeItem{Developed and optimized high-throughput REST and gRPC services using Java Spring, improving backend performance and database efficiency}
+    \resumeItem{Optimized high-throughput REST and gRPC services in Java Spring for better backend and database performance}
+    \resumeItem{Architected and implemented a Kafka-based hotel price monitoring system designed to scale for millions of customers, enabling real-time price tracking and notifications}
+    % \resumeItem{Built a scalable Kafka-based system for real-time hotel price tracking and notifications for millions of customers.}
+    % \resumeItem{Created and deployed a customer preference inference system using heuristics to predict user interests, with plans for ML expansion}
+    \resumeItem{Built a heuristic-driven system to infer customer preferences, laying the groundwork for ML-based personalization}
+    \resumeItem{Engineered a proof-of-concept integrating Google's Knowledge Graph and Vertex AI tools as a replacement for In-house recommendation systems}
   \resumeItemListEnd
 
   \resumeSubheading
     {Undergraduate Teaching Assistant}{January 2024 -- December 2024}
     {Northeastern University - Khoury College of Computer Sciences}{}
     \resumeItemListStart
-      \resumeItem{Conducted office hours, tutoring sessions, and 1-on-1 appointments for CS 2510 (Java) and CS 2500 (Kotlin)}
-      % \resumeItem{Graded homework and held sessions for debugging help, LeetCode practice and exam review}
+      \resumeItem{Conducted office hours, tutoring sessions, and 1-on-1 appointments for 200+ students in Java and Kotlin}
+      \resumeItem{Graded homework and held sessions for debugging help, LeetCode practice and exam review}
       % \resumeItem{Instructed 35+ people concurrently during peak times in Java \& data structures and graded CS 2500 coursework}
     \resumeItemListEnd
     
@@ -242,7 +257,7 @@
     {PawHacks}{}%May 2024 - Present}
     \resumeItemListStart
       \resumeItem{Collaborated with 15 classmates to host a hackathon with over 120 attendees and \$3000+ worth of prizes}
-      % \resumeItem{Developed and deployed the full-stack \underline{\href{https://pawhacks.io}{pawhacks.io}} hackathon website with over 400 unique visitors}
+      \resumeItem{Developed and deployed the full-stack \underline{\href{https://pawhacks.io}{pawhacks.io}} hackathon website with over 10000 visits}
     \resumeItemListEnd
 
 
