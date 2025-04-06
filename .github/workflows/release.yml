@@ -1,0 +1,73 @@
+name: Release Resume
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout resume repo
+      uses: actions/checkout@v3
+
+    - name: Clone asahoo.dev repo
+      run: |
+        git clone https://x-access-token:${{ secrets.ASAHOO_PAT }}@github.com/anish-sahoo/asahoo.dev.git
+
+    - name: Check if resume has changed
+      id: check_diff
+      run: |
+        if cmp -s resume.pdf asahoo.dev/static/resume.pdf; then
+          echo "Resume hasn't changed. Skipping release."
+          echo "resume_changed=false" >> $GITHUB_ENV
+        else
+          echo "Resume has changed."
+          echo "resume_changed=true" >> $GITHUB_ENV
+        fi
+
+    - name: Stop if resume hasn't changed
+      if: env.resume_changed == 'false'
+      run: exit 0
+
+    - name: Bump version with rollover
+      id: bump
+      run: |
+        VERSION=$(cat version.txt)
+        echo "Current version: $VERSION"
+        BASE="${VERSION#v}"
+        IFS='.' read -r MAJOR MINOR <<< "$BASE"
+
+        if [ "$MINOR" -ge 99 ]; then
+          MAJOR=$((MAJOR + 1))
+          MINOR=0
+        else
+          MINOR=$((MINOR + 1))
+        fi
+
+        MINOR_PADDED=$(printf "%02d" $MINOR)
+        NEW_VERSION="v${MAJOR}.${MINOR_PADDED}"
+        echo "$NEW_VERSION" > version.txt
+        echo "New version: $NEW_VERSION"
+        echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
+
+    - name: Commit new version to resume repo
+      run: |
+        git config user.name "GitHub Action"
+        git config user.email "actions@github.com"
+        git add version.txt
+        git commit -m "Bump version to $NEW_VERSION"
+        git push origin main
+
+    - name: Copy resume to asahoo.dev
+      run: |
+        mv resume.pdf asahoo.dev/static/resume.pdf
+
+    - name: Commit and push resume to asahoo.dev
+      run: |
+        cd asahoo.dev
+        git config user.name "GitHub Action"
+        git config user.email "actions@github.com"
+        git add static/resume.pdf
+        git commit -m "Release resume $NEW_VERSION"
+        git push origin main
