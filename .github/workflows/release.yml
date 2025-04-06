@@ -33,13 +33,14 @@ jobs:
           echo "asahoo_dev_changed=false" >> $GITHUB_ENV
         fi
 
-    - name: Stop if no changes in resume.pdf
+    - name: Fail if no changes in resume.pdf
       if: env.asahoo_dev_changed == 'false'
       run: |
-        echo "No changes to resume.pdf. Stopping workflow."
-        exit 0
+        echo "::error::No changes detected in resume.pdf. Workflow failed."
+        exit 1
 
     - name: Bump version with rollover
+      if: env.asahoo_dev_changed == 'true'
       id: bump
       run: |
         VERSION=$(cat version.txt)
@@ -61,6 +62,7 @@ jobs:
         echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
 
     - name: Commit new version to resume repo
+      if: env.asahoo_dev_changed == 'true'
       run: |
         git config user.name "GitHub Action"
         git config user.email "actions@github.com"
@@ -69,6 +71,7 @@ jobs:
         git push origin main
 
     - name: Commit and push resume to asahoo.dev
+      if: env.asahoo_dev_changed == 'true'
       run: |
         cd asahoo.dev
         git config user.name "GitHub Action"
