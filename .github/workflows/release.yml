@@ -15,20 +15,29 @@ jobs:
       run: |
         git clone https://x-access-token:${{ secrets.ASAHOO_PAT }}@github.com/anish-sahoo/asahoo.dev.git
 
-    - name: Check if resume has changed
-      id: check_diff
+    - name: Copy resume to asahoo.dev
       run: |
-        if cmp -s resume.pdf asahoo.dev/static/resume.pdf; then
-          echo "Resume hasn't changed. Skipping release."
-          echo "resume_changed=false" >> $GITHUB_ENV
+        mv resume.pdf asahoo.dev/static/resume.pdf
+
+    - name: Check if only resume.pdf has changed
+      id: check_changes_asahoo
+      run: |
+        cd asahoo.dev
+        git add -A
+        CHANGES=$(git status --porcelain)
+        if echo "$CHANGES" | grep -q 'static/resume.pdf'; then
+          echo "Resume.pdf has changed."
+          echo "asahoo_dev_changed=true" >> $GITHUB_ENV
         else
-          echo "Resume has changed."
-          echo "resume_changed=true" >> $GITHUB_ENV
+          echo "No changes detected for resume.pdf."
+          echo "asahoo_dev_changed=false" >> $GITHUB_ENV
         fi
 
-    - name: Stop if resume hasn't changed
-      if: env.resume_changed == 'false'
-      run: exit 0
+    - name: Stop if no changes in resume.pdf
+      if: env.asahoo_dev_changed == 'false'
+      run: |
+        echo "No changes to resume.pdf. Stopping workflow."
+        exit 0
 
     - name: Bump version with rollover
       id: bump
@@ -58,10 +67,6 @@ jobs:
         git add version.txt
         git commit -m "Bump version to $NEW_VERSION"
         git push origin main
-
-    - name: Copy resume to asahoo.dev
-      run: |
-        mv resume.pdf asahoo.dev/static/resume.pdf
 
     - name: Commit and push resume to asahoo.dev
       run: |
