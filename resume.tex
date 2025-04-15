@@ -20,6 +20,22 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Arial (uncomment both lines below)
+% \renewcommand{\rmdefault}{phv}
+% \renewcommand{\sfdefault}{phv}
+
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -106,12 +122,13 @@
     \textbf{\Huge Anish Sahoo} \\ \vspace{1pt}
     \small 402-706-2827 
     $|$ 
-    \href{mailto:sahoo.an@northeastern.edu}{\underline{sahoo.an@northeastern.edu}} $|$ 
+    % \href{mailto:sahoo.an@northeastern.edu}{\underline{sahoo.an@northeastern.edu}} $|$ 
+    \href{mailto:anishsahoo2005@gmail.com}{\underline{anishsahoo2005@gmail.com}} $|$ 
     \href{https://asahoo.dev}{\underline{asahoo.dev}}
     $|$
     \href{https://linkedin.com/in/anish-sahoo}{\underline{linkedin.com/in/anish-sahoo}} $|$
     \href{https://github.com/anish-sahoo}{\underline{github.com/anish-sahoo}} \vspace{1pt} \\
-    Available January-August 2025 at Boston, San Francisco, NYC \& Seattle
+    Available January-August 2026 $|$ Open to Relocation%anywhere in the United States% at Boston, San Francisco, NYC \& Seattle %$|$ Backend role preferred
 \end{center}
 
 
@@ -122,10 +139,10 @@
       {Northeastern University - Khoury College of Computer Sciences}{September 2023 -- Present}
       {Candidate for Bachelor of Science in Computer Science}{Boston, MA}
     \resumeItemListStart
-        \resumeItem{GPA: 3.89/4.0, Expected Graduation: December 2026, Honors: Dean's List (every semester)}
+        \resumeItem{GPA: 3.84/4.0; Expected Graduation: December 2026; AI Concentration; Honors: Dean's List (every semester)}
         % \resumeItem{Concentration: Artificial Intelligence, Honors: Dean's List (every semester)}
-        \resumeItem{Relevant Courses: Database Design, Object-Oriented Design (Java), Algorithms, Artificial Intelligence, Mathematics for AI, Discrete Mathematics, Operating Systems, Machine Learning, Reinforcement Learning}
-        % \resumeItem{Relevant Courses: Database Design, Object-Oriented Design, Algorithms, Artificial Intelligence, Mathematics of Data Models, Discrete Structures, Computer Systems, Machine Learning, Reinforcement Learning}
+        % \resumeItem{Relevant Courses: Database Design, Object-Oriented Design (Java), Algorithms, Artificial Intelligence, Mathematics for AI, Discrete Mathematics, Operating Systems, Machine Learning, Reinforcement Learning}
+        \resumeItem{Relevant Courses: Database Design, Object-Oriented Design, Algorithms, Artificial Intelligence, Discrete Math, Operating Systems, Machine Learning, Reinforcement Learning, Software Engineering, Computer Vision}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -142,85 +159,34 @@
 %     }}
 %  \end{itemize}
 
+
+
+% <------------------------------------------------ this is the original from before priceline
+% \section{Technical Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%    \textbf{Languages}{: Java, Python, SQL, JavaScript, TypeScript, LaTeX, Kotlin, HTML/CSS } \\  
+%    \textbf{Technologies}{: Spring, gRPC, REST, GraphQL, Apache Kafka, Node.js, Express.js, React.js, Apache Solr, JUnit 5} \\  
+%    \textbf{Databases}{: MySQL, BigQuery, MongoDB, SQLite, Bigtable, PostgreSQL, Redis} \\  
+%    \textbf{DevOps/Tools}{: Git, GitHub, Maven, Bash, Linux, Caddy Server, Maven} \\  
+%    \textbf{Cloud/Observability}{: Google Cloud Platform (GCP), Kubernetes, Docker, NewRelic, Lightrun, Splunk} \\  
+%    \textbf{AI/Data Science}{: PyTorch, NumPy, Gymnasium, Jupyter, PettingZoo, Matplotlib}  
+%   }}
+% \end{itemize}
+% <------------------------------------------------ this is the original from before priceline
+
+
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-   \small{\item{
-    \textbf{Languages}{:  Java, Python, JavaScript, TypeScript, HTML, CSS, SQL, Kotlin, Rust, Scala} \\
-    \textbf{Frameworks}{: React, Node.js, Express.js, Flask, JUnit 5} \\
-    \textbf{Databases}{: SQLite, MySQL, PostgreSQL, MongoDB, Redis} \\
-    \textbf{Developer Tools}{: Git, GitHub, Linux, Bash Shell, Docker, VS Code, LaTeX} \\
-    \textbf{AI/Data Science}{: NumPy, Jupyter Notebooks, PyTorch, TensorFlow, Gymnasium}
-   }}
+  \small{\item{
+   \textbf{Languages}{: Java, Python, SQL, JavaScript, TypeScript, LaTeX, Kotlin, HTML/CSS } \\  
+   \textbf{Technologies}{: Spring Boot, gRPC, REST, Apache Kafka, JUnit 5, Node.js, Express.js, React.js, GraphQL, PyTorch} \\  
+   \textbf{Databases}{: MySQL, BigQuery, MongoDB, SQLite, Bigtable, PostgreSQL, Redis} \\
+   \textbf{DevOps/Tooling}{: Git, CI/CD (GitHub Actions, GitOps, ArgoCD), Docker, Maven, Linux, Kubernetes} \\
+   \textbf{Cloud/Monitoring}{: Google Cloud Platform, NewRelic, Lightrun, Splunk} \\
+  %  \textbf{AI/Data Science}{: PyTorch, NumPy, Gymnasium, Jupyter, PettingZoo, Matplotlib}  
+  }}
 \end{itemize}
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\href{https://github.com/anish-sahoo/AI-Hoops}{\textbf{AI Hoops}} $|$ \emph{Python, PyTorch, OpenAI Gymnasium}}{August 2024}
-      \resumeItemListStart
-        \resumeItem{Trained a game AI that learns to play Atari DoubleDunk basketball using Deep Reinforcement Learning}
-        \resumeItem{Employed novel training approach using RAM observation space and Double Deep Q Networks}
-      \resumeItemListEnd
-
-      \resumeProjectHeading
-        {\href{https://github.com/anish-sahoo/AnimeVisualizer}{\textbf{Map of Top Anime}} $|$ \emph{JavaScript, Python, PixiJS, TensorFlow, MongoDB}}{July 2024}
-        \resumeItemListStart
-          \resumeItem{Created a map visualizer of the top 5000 anime scraped from MyAnimeList using embeddings and t-SNE}
-          \resumeItem{Implemented complex filtering mechanisms and search functionality using PixiJS for exploring the map}
-        \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\href{https://easyclassplanner.com}{\textbf{EasyClassPlanner}} $|$ \emph{Rust, TypeScript, React}}{May 2024}
-      \resumeItemListStart
-        \resumeItem{Created a web application utilizing Recursive Backtracking on a Rust backend to generate optimal schedules}
-        \resumeItem{Implemented UI features like a calendar view for visual assistance in choosing the perfect schedule}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\href{https://github.com/anish-sahoo/XDevChallenge}{\textbf{X Finance (X Developer Challenge)}} $|$ \emph{Python, TypeScript, React, X API, xAI API}}{April 2024}
-      \resumeItemListStart
-        % \resumeItem{Engineered a web application that uses historical Tweet data and xAI’s Grok-1 LLM to analyze public sentiment about stocks on X}
-        \resumeItem{Collaborated with 3 teammates to engineer a web application that uses historical Tweet data and xAI's Grok-1 LLM to analyze public sentiment about stocks on X}
-        \resumeItem{Scraped about 5000 tweets per query containing 1 of 10 AI-generated hashtags related to a stock}
-      \resumeItemListEnd
-
-    % \resumeProjectHeading
-    %   {\textbf{Nearby Prices} $|$ \emph{React.js, JavaScript, Tailwind CSS, Express.js, SQLite}}{March 2024}
-    %   \resumeItemListStart
-    %     \resumeItem{Built a crowd-sourced price aggregator for small businesses where users can add and update prices}
-    %     \resumeItem{Created as an academic project (CS 3200) first with SQLite, then migrated to MongoDB and Redis}
-    %   \resumeItemListEnd
-      
-    % \resumeProjectHeading
-    %   {\textbf{Portfolio Website} $|$ \emph{JavaScript, Gatsby.js, Tailwind CSS}}{December 2023}
-    %   \resumeItemListStart
-    %     \resumeItem{Designed and implemented a simple website to showcase projects, achievements, and resume}
-    %   \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\href{https://github.com/anish-sahoo/khouryktrl}{\textbf{KhouryKTRL}} $|$ \emph{JavaScript, VSCode API}}{October 2023}
-      \resumeItemListStart
-        \resumeItem{VSCode extension that helps CS2500 (Fundamentals of CS 1) students save time in code execution/linting}
-        \resumeItem{Endorsed by 2 professors and used by over 100 students on the Northeastern Oakland Campus}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\href{https://play.google.com/store/apps/details?id=com.anish.expirydatereminder}{\textbf{Expiry Date Reminder}} $|$ \emph{Java, SQLite, Android SDK, Android Studio}}{August 2022}
-      \resumeItemListStart
-        \resumeItem{Developed an Android application that stores expiration dates and reminds the user if something is expiring soon}
-        \resumeItem{Amassed over 4,500 downloads and a 4.5/5 star rating on the Google Play Store}
-      \resumeItemListEnd
-
-    % \resumeProjectHeading{\textbf{Other Projects} $|$ \emph{Java, Python, Kotlin, Rust, C++}}{}
-    %   \resumeItemListStart
-    %     \resumeItem{WebSocket Line System, AI Resume Parser, Password Manager, Wordle Clone, Text Processing Discord Bot}
-    %   \resumeItemListEnd
-    
-    
-  \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -247,48 +213,122 @@
   % \resumeSubheading
   %   {Organizer, Mentor \& Full Stack Developer}{December 2023 -- Present}
   %   {PawHacks}{Oakland, CA} 
-  \resumeSubheadingSmall{PawHacks}{December 2023 -- Present}
-
-    \resumeSubSubheading
-    {Mentor/Technical Recruiter/Organizer}{Oakland, CA}%May 2024 - Present}
-    \resumeItemListStart
-      % \resumeItem{Conducted technical interviews for applicants and mentored the website team for PawHacks 2.0}
-    % ---> uncomment from here to split
-    % \resumeItemListEnd 
-
-    % \resumeSubSubheading
-    % {Full Stack Developer}{}%December 2023 -- April 2024}
-    % \resumeItemListStart
-    % ----> uncomment till here to split
-      \resumeItem{Collaborated with 15 classmates to host a hackathon with over 120 attendees and \$3000+ worth of prizes}
-      \resumeItem{Developed and deployed the full-stack \underline{\href{https://pawhacks.io}{pawhacks.io}} hackathon website with over 400 unique visitors}
-      \resumeItem{Conducted technical interviews for applicants and mentored the website team for PawHacks 2.0} % comment for later
-      % \resumeItem{Currently interviewing candidates and mentoring new website team members for the PawHacks 2.0 team}
-    \resumeItemListEnd
-
-  %   \resumeSubSubheading
-  % {Mentor/Technical Recruiter}{May 2024 - Present}
-  % \resumeItemListStart
-  %    \resumeItem
-  %      {Conduct technical interviews for multiple applicants and mentor the website team for PawHacks 2.0}
-  % \resumeItemListEnd
+  \resumeSubheading
+  {Priceline (Enterprise Data Products \& Services Team)}{January 2025 -- June 2025}
+  {Backend Software Engineer Co-op}{New York, NY}
+  \resumeItemListStart
+    \resumeItem{Developed scalable REST and gRPC microservices in Spring for personalization and recommendation services}%and integrating technologies like Kafka, Bigtable, and BigQuery}
+    % \resumeItem{Built and maintained scalable REST and gRPC microservices in Java Spring, supporting high-throughput data products and powering key recommendation and personalization features}
+    \resumeItem{Engineered and deployed a Kafka-based hotel price monitoring system with high-throughput producer and consumer services, handling millions of events daily for real-time price tracking and notifications}
+    \resumeItem{Designed and implemented a relevancy ranking algorithm to personalize user experiences based on past activity}
+    % \resumeItem{Enhanced existing recommendation and personalization projects, and built a proof of concept integrating Google Vertex AI Search Engine to replace in-house vector search system for more personalized chatbot interactions}
+    \resumeItem{Collaborated closely with product, data, and engineering teams in an Agile environment to deliver high-impact features under tight deadlines, balancing technical depth with clear and consistent communication}%and clear communication}
+  \resumeItemListEnd
 
   \resumeSubheading
-    {Northeastern University - Khoury College of Computer Sciences}{January 2024 -- Present}
-    {Undergraduate Teaching Assistant}{}
+    {Northeastern University - Khoury College of Computer Sciences}{January 2024 -- December 2024}
+    {Undergraduate Teaching Assistant}{Boston, MA}
     \resumeItemListStart
-      \resumeItem{Conducted 20 hours of office hours and tutoring sessions per week for CS 2510 (Java) and CS 2500 (Kotlin)}
-      \resumeItem{Held on-demand 1-on-1 appointments for debugging help, LeetCode practice and exam review}
-      \resumeItem{Instructed 35+ people concurrently during peak times in Java \& data structures and graded CS 2500 coursework}
+      % \resumeItem{Conducted office hours, tutoring sessions, and 1-on-1 appointments for 200+ students in Java and Kotlin}
+      \resumeItem{Instructed 200+ students in Java and Kotlin through office hours, 1-on-1 appointments, and homework grading}
+      % \resumeItem{Graded homework and held sessions for debugging help, LeetCode practice and exam review}
+      % \resumeItem{Instructed 35+ people concurrently during peak times in Java \& data structures and graded CS 2500 coursework}
     \resumeItemListEnd
+    
+  \resumeSubheadingSmall{PawHacks}{December 2023 -- May 2024}
+    \resumeSubSubheading
+    {Software Engineer/Organizer}{San Francisco Bay Area, CA}%May 2024 - Present}
+    \resumeItemListStart
+      \resumeItem{Collaborated with 15 classmates to host a hackathon with over 120 attendees and \$3000+ worth of prizes}
+      \resumeItem{Created and deployed the full-stack \href{https://web.archive.org/web/20241229024348/https://pawhacks.io/}{\underline{pawhacks.io}} hackathon website with over 10000 visits}
+    \resumeItemListEnd
+
 
   \resumeSubHeadingListEnd
 
 
+  %-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\href{https://github.com/anish-sahoo/KnightsArchersZombiesPPO}{\textbf{KnightsArchersZombies (KAZ)}} $|$ \emph{PyTorch, PettingZoo, Deep Reinforcement Learning}}{December 2024}
+    \resumeItemListStart
+      \resumeItem{Devised a multi-agent version of the Proximal Policy Optimization (PPO) algorithm, inspired by the \href{https://arxiv.org/abs/1707.06347}{\underline{PPO}} and \href{https://arxiv.org/abs/2103.01955}{\underline{MAPPO}} papers, that enhances agent cooperation by integrating a shared actor-critic architecture}
+      \resumeItem{Trained four agents in the KAZ environment to cooperate in zombie combat and achieve shared survival goals}
+    \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\href{https://github.com/anish-sahoo/AI-Hoops}{\textbf{AI Hoops}} $|$ \emph{Python, PyTorch, OpenAI Gymnasium}}{August 2024}
+  %   \resumeItemListStart
+  %     \resumeItem{Trained a game AI that learns to play Atari DoubleDunk basketball using Deep Reinforcement Learning}
+  %     \resumeItem{Employed novel training approach using RAM observation space and Double Deep Q Networks}
+  %   \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://github.com/anish-sahoo/AnimeVisualizer}{\textbf{Map of Top Anime}} $|$ \emph{JavaScript, Python, PixiJS, TensorFlow, MongoDB}}{July 2024}
+      \resumeItemListStart
+        \resumeItem{Created a map visualizer of the top 5000 anime scraped from MyAnimeList using embeddings and t-SNE}
+        \resumeItem{Implemented complex filtering mechanisms and search functionality using Apache Solr and rendering with PixiJS}
+      \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\href{https://easyclassplanner.com}{\textbf{EasyClassPlanner}} $|$ \emph{Rust, TypeScript, React}}{May 2024}
+  %   \resumeItemListStart
+  %     \resumeItem{Created a web application utilizing Recursive Backtracking on a Rust backend to generate optimal schedules}
+  %     \resumeItem{Implemented UI features like a calendar view for visual assistance in choosing the perfect schedule}
+  %   \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\href{https://github.com/anish-sahoo/XDevChallenge}{\textbf{X Finance (X Developer Challenge)}} $|$ \emph{Python, TypeScript, React, X API, xAI API}}{April 2024}
+    \resumeItemListStart
+      % \resumeItem{Engineered a web application that uses historical Tweet data and xAI’s Grok-1 LLM to analyze public sentiment about stocks on X}
+      \resumeItem{Collaborated with 3 teammates to engineer a web application that uses historical Tweet data and xAI's Grok-1 LLM to analyze public sentiment about stocks on X}
+      \resumeItem{Scraped about 5000 tweets per query containing 1 of 10 AI-generated hashtags related to a stock}
+    \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\textbf{Nearby Prices} $|$ \emph{React.js, JavaScript, Tailwind CSS, Express.js, SQLite}}{March 2024}
+  %   \resumeItemListStart
+  %     \resumeItem{Built a crowd-sourced price aggregator for small businesses where users can add and update prices}
+  %     \resumeItem{Created as an academic project (CS 3200) first with SQLite, then migrated to MongoDB and Redis}
+  %   \resumeItemListEnd
+    
+  % \resumeProjectHeading
+  %   {\textbf{Portfolio Website} $|$ \emph{JavaScript, Gatsby.js, Tailwind CSS}}{December 2023}
+  %   \resumeItemListStart
+  %     \resumeItem{Designed and implemented a simple website to showcase projects, achievements, and resume}
+  %   \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\href{https://github.com/anish-sahoo/khouryktrl}{\textbf{KhouryKTRL}} $|$ \emph{JavaScript, VSCode API}}{October 2023}
+  %   \resumeItemListStart
+  %     \resumeItem{VSCode extension that helps CS2500 (Fundamentals of CS 1) students save time in code execution/linting}
+  %     \resumeItem{Endorsed by 2 professors and used by over 100 students on the Northeastern Oakland Campus}
+  %   \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\href{https://play.google.com/store/apps/details?id=com.anish.expirydatereminder}{\textbf{Expiry Date Reminder}} $|$ \emph{Java, SQLite, Android SDK, Android Studio}}{August 2022}
+    \resumeItemListStart
+      \resumeItem{Developed an Android application that stores expiration dates and reminds the user if something is expiring soon}
+      \resumeItem{Amassed over 4,500 downloads and a 4.5/5 star rating on the Google Play Store}
+    \resumeItemListEnd
+
+  % \resumeProjectHeading{\textbf{Other Projects} $|$ \emph{Java, Python, Kotlin, Rust, C++}}{}
+  %   \resumeItemListStart
+  %     \resumeItem{WebSocket Line System, AI Resume Parser, Password Manager, Wordle Clone, Text Processing Discord Bot}
+  %   \resumeItemListEnd
+  
+  
+\resumeSubHeadingListEnd
+
+
+
+% -----------INTERESTS----------------
  \section{Interests}
   \begin{itemize}[leftmargin=0.15in, label={}]
       \small{\item{
-        Photography, Photo/Video Editing, Manga, Badminton, Hackathons, Travelling
+        Street Photography, Photo/Video Editing, Manga, Badminton, Travelling, Hiking
       }}
   \end{itemize}
 
