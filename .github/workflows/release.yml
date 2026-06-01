@@ -17,7 +17,7 @@ jobs:
 
     - name: Copy resume to asahoo.dev
       run: |
-        mv resume.pdf asahoo.dev-v2/static/resume.pdf
+        mv resume.pdf asahoo.dev-v2/public/resume.pdf
 
     - name: Check if only resume.pdf has changed
       id: check_changes_asahoo
@@ -25,7 +25,7 @@ jobs:
         cd asahoo.dev-v2
         git add -A
         CHANGES=$(git status --porcelain)
-        if echo "$CHANGES" | grep -q 'static/resume.pdf'; then
+        if echo "$CHANGES" | grep -q 'public/resume.pdf'; then
           echo "Resume.pdf has changed."
           echo "asahoo_dev_changed=true" >> $GITHUB_ENV
         else
@@ -76,6 +76,6 @@ jobs:
         cd asahoo.dev
         git config user.name "GitHub Action"
         git config user.email "actions@github.com"
-        git add static/resume.pdf
+        git add public/resume.pdf
         git commit -m "Release resume $NEW_VERSION"
         git push origin main
