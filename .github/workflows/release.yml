@@ -13,16 +13,16 @@ jobs:
 
     - name: Clone asahoo.dev repo
       run: |
-        git clone https://x-access-token:${{ secrets.ASAHOO_PAT }}@github.com/anish-sahoo/asahoo.dev.git
+        git clone https://x-access-token:${{ secrets.ASAHOO_PAT }}@github.com/anish-sahoo/asahoo.dev-v2.git
 
     - name: Copy resume to asahoo.dev
       run: |
-        mv resume.pdf asahoo.dev/static/resume.pdf
+        mv resume.pdf asahoo.dev-v2/static/resume.pdf
 
     - name: Check if only resume.pdf has changed
       id: check_changes_asahoo
       run: |
-        cd asahoo.dev
+        cd asahoo.dev-v2
         git add -A
         CHANGES=$(git status --porcelain)
         if echo "$CHANGES" | grep -q 'static/resume.pdf'; then

@@ -1,6 +1,8 @@
 OldResumes/
 Resume_Anish_Sahoo.pdf
 
+.DS_Store
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
