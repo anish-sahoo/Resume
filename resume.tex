@@ -148,8 +148,8 @@
   {Cloudflare}{June 2026 - August 2026}
   {Software Engineer Intern}{Austin, TX}
   \resumeItemListStart
-      \resumeItem{Contributed to \underline{\href{https://github.com/replicate/cog}{Cog}}, an open-source ML packaging tool with 9.5k stars used for Workers AI production models; triaged stale issues and unfinished PRs, and shipped 11 major features and bug fixes across 2 releases}
-      \resumeItem{Added distributed tracing to Cog model serving infrastructure, and structured logging across Cog, vLLM, and Deepgram backends, enabling per-request debugging and production inference benchmarking}
+      \resumeItem{Maintained \underline{\href{https://github.com/replicate/cog}{Cog}}, the 9.5k star open-source ML packaging tool behind Workers AI models, shipping features including cog playground, static input validation, local wheel support, and a new concurrency API}
+      \resumeItem{Added distributed tracing to internal model serving infrastructure, and structured logging across Cog, vLLM, and Deepgram backends, enabling per-request debugging and production inference benchmarking}
       \resumeItem{Migrated 6 production models from \underline{\href{https://replicate.com}{Replicate}} to Workers AI; contributed to internal registry and control plane }
   \resumeItemListEnd
 
@@ -222,12 +222,12 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-      {\textbf{AnimeDiscovery} $|$ \emph{Python, TypeScript, Bun, Next.js, Cap'n Web RPC, pgvector}}{}%{June 2025}
+      {\textbf{AnimeDiscovery} $|$ \emph{Python, TypeScript, Bun, Next.js, pgvector, Dagster}}{}%{June 2025}
       \resumeItemListStart
         % \resumeItem{Built a scalable recommendation system for personalized anime discovery using a Two Tower Model architecture}
         % \resumeItem{Integrated PostgreSQL, Elasticsearch, and Redis using Spring Boot for a fault-tolerant, low-latency system for personalized search and recommendations on over 20,000 anime scraped from MyAnimeList}
       %  \resumeItem{Built a scalable Two-Tower recommendation system for personalized anime discovery}
-      \resumeItem{Built an anime recommender where users fly through a 3D semantic map of 10,000 titles instead of scrolling a ranked list, rebuilt weekly from MyAnimeList by a Dagster pipeline}
+      \resumeItem{Built an anime recommendation engine on \underline{\href{https://github.com/cloudflare/capnweb}{Cap'n Web}} RPC with stateless personalization, two-stage retrieval and reranking in pgvector, and weekly ETL pipelines in Dagster}
       % \resumeItem{Implemented rate limiting and instrumented application using Kibana + Grafana Cloud, resulting in 95\% uptime}
         \resumeItemListEnd
 
