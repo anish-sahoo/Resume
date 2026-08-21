@@ -148,7 +148,10 @@
   {Cloudflare}{June 2026 - August 2026}
   {Software Engineer Intern}{Austin, TX}
   \resumeItemListStart
-      \resumeItem{Maintained \underline{\href{https://github.com/replicate/cog}{Cog}}, the 9.5k star open-source ML packaging tool behind Workers AI models, shipping features including cog playground, static input validation, local wheel support, and a new concurrency API}
+      \resumeItem{Maintained \underline{\href{https://github.com/replicate/cog}{Cog}}, the open-source ML packaging tool (9.5k stars) behind Workers AI models, shipping features including static input validation, local wheel support, weight push/pull progress bars, and a new concurrency API}
+      % Swap the line above for this one once https://github.com/replicate/cog/pull/3157 (OpenTelemetry tracing) merges:
+      % \resumeItem{Maintained \underline{\href{https://github.com/replicate/cog}{Cog}}, the 9.5k star open-source ML packaging tool behind Workers AI models, shipping features including static input validation, local wheel support, OpenTelemetry tracing, and a new concurrency API}
+      \resumeItem{Shipped cog playground, a web UI for testing models with input validation, SSE output, and media previews}
       \resumeItem{Added distributed tracing to internal model serving infrastructure, and structured logging across Cog, vLLM, and Deepgram backends, enabling per-request debugging and production inference benchmarking}
       \resumeItem{Migrated 6 production models from \underline{\href{https://replicate.com}{Replicate}} to Workers AI; contributed to internal registry and control plane }
   \resumeItemListEnd
@@ -158,7 +161,7 @@
   {Software Engineer Co-op, AI/ML}{Boston, MA}
   \resumeItemListStart
       \resumeItem{Architected a company-wide AI platform service in Spring AI serving 8.6M+ requests/day, standardizing company-wide LLM access and enabling streaming inference for long-running and reasoning-heavy workloads}
-      \resumeItem{Built experimental ML recommendation pipeline for Deviations Analyzer suite using 30K+ deviations, clustering root-cause and mitigation data and using vector search to recommend investigation strategies}
+      \resumeItem{Built an experimental ML recommendation pipeline for Deviations Analyzer suite using 30K+ deviations, clustering root-cause and mitigation data and using vector search to recommend investigation strategies}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -166,7 +169,7 @@
   {Software Engineer}{Boston, MA}
   \resumeItemListStart
     \resumeItem{Built Go backend services for real-time trip collaboration and timeline management in a React Native iOS app}
-    \resumeItem{Developed Pub/Sub architecture for real time updates, and features like polls, activity feed, user fan-out, etc.}
+    \resumeItem{Developed Pub/Sub architecture for real-time updates, and features like polls, activity feed, and user fan-out}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -222,7 +225,7 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-      {\textbf{AnimeDiscovery} $|$ \emph{Python, TypeScript, Bun, Next.js, pgvector, Dagster}}{}%{June 2025}
+      {\textbf{AnimeDiscovery} $|$ \emph{Python, TypeScript, pgvector, Dagster}}{}%{June 2025}
       \resumeItemListStart
         % \resumeItem{Built a scalable recommendation system for personalized anime discovery using a Two Tower Model architecture}
         % \resumeItem{Integrated PostgreSQL, Elasticsearch, and Redis using Spring Boot for a fault-tolerant, low-latency system for personalized search and recommendations on over 20,000 anime scraped from MyAnimeList}
@@ -249,10 +252,10 @@
 \section{technical skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-   \textbf{Languages}{: Java, Python, TypeScript, SQL, Go, JavaScript, Kotlin, Rust, HTML/CSS } \\
-   \textbf{Technologies}{: Spring Boot, Spring AI, gRPC, Kafka, GraphQL, Node.js, Bun, React.js, PyTorch, FastAPI} \\
+   \textbf{Languages}{: Java, Python, TypeScript, Go, SQL, JavaScript, Kotlin, Rust } \\
+   \textbf{Technologies}{: Spring Boot, Spring AI, Kafka, gRPC, GraphQL, Node.js, React.js, PyTorch, FastAPI} \\
    \textbf{Databases}{: MySQL, PostgreSQL, BigQuery, Bigtable, Redis, Elasticsearch, MongoDB} \\
-   \textbf{Infrastructure}{: AWS, GCP, Docker, Kubernetes, Terraform, CI/CD Pipelines, Linux, ArgoCD} \\
+   \textbf{Infrastructure}{: AWS, GCP, Cloudflare, Docker, Kubernetes, Terraform, Linux, ArgoCD, OpenTelemetry} \\
   }}
 \end{itemize}
 
