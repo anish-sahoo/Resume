@@ -136,7 +136,7 @@
       {Northeastern University}{September 2023 -- December 2026}
       {Bachelor of Science in Computer Science}{Boston, MA}
     \resumeItemListStart
-        \resumeItem{GPA: 3.8/4.0 $|$ Relevant Courses: Software Engineering, Algorithms \& Data Structures, Object-Oriented Design, Database Design, AI, Machine Learning, Reinforcement Learning, Computer Vision, Operating Systems}
+        \resumeItem{GPA: 3.8/4.0 $|$ Relevant Courses: Software Engineering, Algorithms \& Data Structures, Object-Oriented Design, Database Design, AI, ML, Reinforcement Learning, Computer Vision, Agentic AI, Information Retrieval}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -144,46 +144,52 @@
 \section{experience}
   \resumeSubHeadingListStart
 
+  % \resumeSubheading
+  % {-}{from - to}
+  % {hopefully Software Engineer II}{-}
+  % \resumeItemListStart
+  %     \resumeItem{who knows}
+  % \resumeItemListEnd
+
   \resumeSubheading
   {Cloudflare}{June 2026 - August 2026}
   {Software Engineer Intern}{Austin, TX}
   \resumeItemListStart
       \resumeItem{Maintained \underline{\href{https://github.com/replicate/cog}{Cog}}, the open-source ML packaging tool (9.5k stars) behind Workers AI models, shipping features including static input validation, native OTEL support, new concurrency API, and weight push/pull progress bars}
-      % Swap the line above for this one once https://github.com/replicate/cog/pull/3157 (OpenTelemetry tracing) merges:
-      % \resumeItem{Maintained \underline{\href{https://github.com/replicate/cog}{Cog}}, the 9.5k star open-source ML packaging tool behind Workers AI models, shipping features including static input validation, local wheel support, OpenTelemetry tracing, and a new concurrency API}
       \resumeItem{Shipped cog playground, a web UI for testing models with input validation, SSE output, and media previews}
-      \resumeItem{Added distributed tracing to internal model serving infrastructure, and structured logging across Cog, vLLM, and Deepgram backends, enabling per-request debugging and production inference benchmarking}
-      \resumeItem{Migrated 6 production models from \underline{\href{https://replicate.com}{Replicate}} to Workers AI; contributed to internal registry and control plane }
+      \resumeItem{Added distributed tracing to internal model serving infrastructure, and structured logging across Cog and vLLM backends, enabling per-request debugging and production inference benchmarking}
+      \resumeItem{Migrated 6 production models from \underline{\href{https://replicate.com}{Replicate}} to Workers AI; contributed to infrastructure control plane}
   \resumeItemListEnd
 
   \resumeSubheading
   {MasterControl}{January 2026 - June 2026}
-  {Software Engineer Co-op, AI/ML}{Boston, MA}
+  {Software Engineer Co-op}{Boston, MA}
   \resumeItemListStart
-      \resumeItem{Architected a unified AI platform in \underline{\href{https://asahoo.dev/notes/spring-ai-is-nice/}{Spring AI}} serving 8.6M+ requests/day, providing a common API with configurable model routing for self-service LLM integration and end-to-end streaming inference across teams}
+      \resumeItem{Architected an internal AI gateway in \underline{\href{https://asahoo.dev/notes/spring-ai-is-nice/}{Spring AI}} serving 8.6M+ requests/day, unifying in-house LLMs and embedding models behind an end-to-end streaming API with auth, token and cost tracking, and observability}
+      \resumeItem{Enabled product teams to build and maintain custom AI workflows independently, extending the AI/ML team's impact from research and ML engineering to company-wide AI platform and infrastructure enablement}
       \resumeItem{Built an experimental ML recommendation pipeline for Deviations Analyzer suite using 30K+ deviations, clustering root-cause and mitigation data and using vector search to recommend investigation strategies}
   \resumeItemListEnd
 
-  \resumeSubheading
-  {Generate Product Development Club}{January 2026 - Present}
-  {Software Engineer}{Boston, MA}
-  \resumeItemListStart
-    \resumeItem{Built Go backend services for real-time trip collaboration and timeline management in a React Native iOS app}
-    \resumeItem{Developed Pub/Sub architecture for real-time updates, and features like polls, activity feed, and user fan-out}
-  \resumeItemListEnd
+  % \resumeSubheading
+  % {Generate Product Development Club}{January 2026 - Present}
+  % {Software Engineer}{Boston, MA}
+  % \resumeItemListStart
+  %   \resumeItem{Built Go backend services for real-time trip collaboration and timeline management in a React Native iOS app}
+  %   \resumeItem{Developed Pub/Sub architecture for real-time updates across 20+ activity types, including polls and user fan-out}
+  % \resumeItemListEnd
 
-  \resumeSubheading
-  {Massachusetts National Guard}{September 2025 -- December 2025}
-  {Lead Software Engineer, University Practicum}{Boston, MA}
-  \resumeItemListStart
-      \resumeItem{Led a team of 8 engineers to design and ship a centralized communications and mentor matching platform for 4,000+ troop members, scoping requirements directly with unit leadership}
-      \resumeItem{Automated mentor-mentee pairing using hybrid search across profile similarity, availability, and mentor load}
-      \resumeItem{Built S3-backed file sharing and Web Push notifications delivering documents and alerts to troops' phones}
-  \resumeItemListEnd
+  % \resumeSubheading
+  % {Massachusetts National Guard}{September 2025 -- December 2025}
+  % {Lead Software Engineer, University Practicum}{Boston, MA}
+  % \resumeItemListStart
+  %     \resumeItem{Led a team of 8 engineers to design and ship a centralized communications and mentor matching platform for 4,000+ troop members, scoping requirements directly with unit leadership}
+  %     \resumeItem{Automated mentor-mentee pairing using hybrid search across profile similarity, availability, and mentor load}
+  %     \resumeItem{Built S3-backed file sharing and Web Push notifications delivering documents and alerts to troops' phones}
+  % \resumeItemListEnd
 
   \resumeSubheading
   {Priceline}{January 2025 -- June 2025}
-  {Software Engineer Co-op, Backend}{New York, NY}
+  {Software Engineer Co-op}{New York, NY}
   \resumeItemListStart
     % \resumeItem{Built scalable REST and gRPC microservices in Spring, collaborating with product, data, and 4+ engineering teams to deliver recommendation and personalization features in an Agile environment}`'
     
@@ -192,21 +198,19 @@
     % \resumeItem{Engineered and deployed a Kafka-based system for real-time hotel price tracking and notifications, streaming millions of daily events with high throughput and instrumented for observability using NewRelic and Splunk}
     % \resumeItem{Designed and implemented a relevancy ranking algorithm to personalize user experiences based on past activity}
     
-    \resumeItem{Led integration and A/B testing of Google Vertex AI Search for the Penny chatbot's search service in coordination with Google engineers, improving result relevance by around 25\% across two evaluation metrics}
+    \resumeItem{Led integration and A/B testing of Google Vertex AI Search for the Penny agent's search service in coordination with Google engineers, improving result relevance by around 25\% across two evaluation metrics}
     % \resumeItem{Delivered personalization and recommendations via Spring Boot + Kafka services; partnered with 4+ teams}
     % \resumeItem{Delivered personalization and recommendation features using Spring Boot \& Kafka, collaborating with 4+ teams}
-    \resumeItem{Developed Kafka pipeline for real-time hotel price alerts, streaming 1M+ events/day with high throughput}
-    % \resumeItem{Implemented relevance ranking to personalize results from user activity, boosting user re-engagement at scale}
-
+    \resumeItem{Developed Kafka pipeline for real-time hotel price change alerts, streaming 1M+ events/day with high throughput}
+    \resumeItem{Implemented relevance ranking in ``Pick up where you left off" section, boosting user re-engagement at scale}
   \resumeItemListEnd
 
-  % \resumeSubheading
-  % {Northeastern University}{January 2024 -- December 2024}
-  % {Undergraduate Teaching Assistant}{Boston, MA}
-  % \resumeItemListStart
-  %   % \resumeItem{Instructed 200+ students in Java and Kotlin through office hours, 1-on-1 appointments, and homework grading}
-  %   \resumeItem{Instructed 500+ students in Java and Kotlin, dedicating 4+ hours weekly to office hours, fostering a collaborative learning environment focused on software development best practices}
-  % \resumeItemListEnd
+  \resumeSubheading
+  {Northeastern University}{January 2024 -- December 2026}
+  {Teaching Assistant}{Boston, MA}
+  \resumeItemListStart
+    \resumeItem{Mentored students in software consulting capstone \& introductory CS courses, taught software best practices and client communication, gave a guest lecture at large data science course (Fall 2026, Fall 2024, Spring 2024)}
+  \resumeItemListEnd
     
   % \resumeSubheadingSmall{PawHacks}{December 2023 -- May 2024}
   %   \resumeSubSubheading
@@ -223,19 +227,36 @@
   %-----------PROJECTS-----------
 \section{projects}
 \resumeSubHeadingListStart
+% \resumeProjectHeading
+%     {\href{a}{\textbf{Birdie and Claire}} $|$ \emph{Technical Lead}}{}%{October 2024}
+%     \resumeItemListStart
+%       \resumeItem{}
+%     \resumeItemListEnd
 
-  \resumeProjectHeading
-      {\textbf{AnimeDiscovery} $|$ \emph{Python, TypeScript, pgvector, Dagster}}{}%{June 2025}
-      \resumeItemListStart
-        % \resumeItem{Built a scalable recommendation system for personalized anime discovery using a Two Tower Model architecture}
-        % \resumeItem{Integrated PostgreSQL, Elasticsearch, and Redis using Spring Boot for a fault-tolerant, low-latency system for personalized search and recommendations on over 20,000 anime scraped from MyAnimeList}
-      %  \resumeItem{Built a scalable Two-Tower recommendation system for personalized anime discovery}
-      \resumeItem{Built an anime recommendation engine on \underline{\href{https://github.com/cloudflare/capnweb}{Cap'n Web}} RPC with stateless personalization, two-stage retrieval and reranking in pgvector, and weekly ETL pipelines in Dagster}
-      % \resumeItem{Implemented rate limiting and instrumented application using Kibana + Grafana Cloud, resulting in 95\% uptime}
-        \resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/generatenu/birdie-and-claire}{\textbf{Birdie and Claire (Technical Lead)}} $|$ \emph{Go, TypeScript, Modal, pgvector}}{}%{October 2024}
+\resumeItemListStart
+\resumeItem{Led a team of 5 engineers and 4 designers to build an outfit styling tool for brands to increase item-to-purchase conversion; designed architecture, delegated and reviewed engineering work and mentored engineers}
+\resumeItemListEnd
+
+\resumeProjectHeading
+    {\href{a}{\textbf{GuardConnect (Technical Lead)}} $|$ \emph{Typescript, Next.js, tRPC, AWS}}{}%{October 2024}
+    \resumeItemListStart
+      \resumeItem{Led 8 engineers and bulit a communication system for Massachusetts National Guard, supporting 4000+ troops}
+    \resumeItemListEnd
+  % \resumeProjectHeading
+  %     {\textbf{AnimeDiscovery} $|$ \emph{TypeScript, pgvector, Cloudflare Workers}}{}%{June 2025}
+  %     \resumeItemListStart
+  %       % \resumeItem{Built a scalable recommendation system for personalized anime discovery using a Two Tower Model architecture}
+  %       % \resumeItem{Integrated PostgreSQL, Elasticsearch, and Redis using Spring Boot for a fault-tolerant, low-latency system for personalized search and recommendations on over 20,000 anime scraped from MyAnimeList}
+  %     %  \resumeItem{Built a scalable Two-Tower recommendation system for personalized anime discovery}
+  %     \resumeItem{Built an anime recommendation engine on \underline{\href{https://github.com/cloudflare/capnweb}{Cap'n Web}} RPC with stateless personalization, two-stage retrieval and reranking in pgvector, and weekly ETL pipelines in Dagster}
+  %     % \resumeItem{Implemented rate limiting and instrumented application using Kibana + Grafana Cloud, resulting in 95\% uptime}
+  %       \resumeItemListEnd
 
     \resumeProjectHeading
-    {\href{a}{\textbf{OpenLegislation (HackHarvard 2024 Winner)}} $|$ \emph{JavaScript, Node.js, Transformers.js}}{}%{October 2024}
+    {\textbf{OpenLegislation (HackHarvard 2024 Winner)} $|$ \emph{JavaScript, Node.js, Transformers.js}}{}%{October 2024}
     \resumeItemListStart
       \resumeItem{Led a team of 4 to build a legislation discovery platform powered by semantic search, helping analyze U.S. Congressional bill supporters and enhance candidate transparency ahead of the 2024 presidential election}
     \resumeItemListEnd
@@ -253,7 +274,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
    \textbf{Languages}{: Java, Python, TypeScript, Go, SQL, JavaScript, Kotlin, Rust } \\
-   \textbf{Technologies}{: Spring Boot, Spring AI, Kafka, gRPC, GraphQL, Node.js, React.js, PyTorch, FastAPI} \\
+   \textbf{Technologies}{: Spring Boot, Spring AI, Kafka, gRPC, GraphQL, Node.js, React.js, PyTorch, Langchain} \\
    \textbf{Databases}{: MySQL, PostgreSQL, BigQuery, Bigtable, Redis, Elasticsearch, MongoDB} \\
    \textbf{Infrastructure}{: AWS, GCP, Cloudflare, Docker, Kubernetes, Terraform, Linux, ArgoCD, OpenTelemetry} \\
   }}
